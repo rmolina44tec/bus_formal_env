@@ -1,0 +1,58 @@
+action aaMonetActionReplayMode -trigger
+
+action aaMonetViewDone:0 -reset
+action aaMonetView:0 -guimode {1} -trigger
+waitfor aaMonetViewDone:0
+
+action aaMonetAvClickedDone:0 -reset
+action aaMonetAvClicked:0 -trigger
+waitfor aaMonetAvClickedDone:0
+
+action aaHierViewSrc:0 -reset
+action aaHierViewSrc:0 -trigger
+waitfor aaHierViewSrc:0
+
+action aaMonetAvClickedDone:0 -reset
+action aaMonetAvClicked:0 -itemPath {AEP} -row {0} -trigger
+waitfor aaMonetAvClickedDone:0
+
+action aaMonetDvSortColDesc:0 -reset
+action aaMonetDvSortColDesc:0 -data {0|PROPERTY_STATUS} -trigger
+waitfor aaMonetDvSortColDesc:0
+
+action aaHierViewSrc:0 -reset
+action aaHierViewSrc:0 -inst {floating_bus_100} -line {../../../Designs/Interconnect/BUS/Router_library2.sv:110} -trigger
+waitfor aaHierViewSrc:0
+
+action aaHierViewSrc:0 -reset
+action aaHierViewSrc:0 -inst {floating_bus_128} -line {../../../Designs/Interconnect/BUS/Router_library2.sv:110} -trigger
+waitfor aaHierViewSrc:0
+
+action aaHierViewSrc:0 -reset
+action aaHierViewSrc:0 -inst {bus_ssc_gnrtr.agnt_[2]._bus_intrfs.fifo_out.arith_oflow_3} -line {../../../Designs/Interconnect/BUS/../FIFO_Latches/fifo.sv:396} -trigger
+waitfor aaHierViewSrc:0
+
+action aaHierViewSrc:0 -reset
+action aaHierViewSrc:0 -inst {bus_ssc_gnrtr.agnt_[0]._bus_intrfs.fifo_in.arith_oflow_1} -line {../../../Designs/Interconnect/BUS/../FIFO_Latches/fifo.sv:396} -trigger
+waitfor aaHierViewSrc:0
+
+action aaHierViewSrc:0 -reset
+action aaHierViewSrc:0 -inst {floating_bus_139} -line {../../../Designs/Interconnect/BUS/../FIFO_Latches/fifo.sv:198} -trigger
+waitfor aaHierViewSrc:0
+
+action aaHierViewSrc:0 -reset
+action aaHierViewSrc:0 -inst {floating_bus_100} -line {../../../Designs/Interconnect/BUS/Router_library2.sv:110} -trigger
+waitfor aaHierViewSrc:0
+
+action aaHierViewSrc:0 -reset
+action aaHierViewSrc:0 -inst {bus_ssc_gnrtr.agnt_[0]._bus_intrfs.fifo_out.arith_oflow_3} -line {../../../Designs/Interconnect/BUS/../FIFO_Latches/fifo.sv:396} -trigger
+waitfor aaHierViewSrc:0
+
+action aaHierViewSrc:0 -reset
+action aaHierViewSrc:0 -inst {floating_bus_110} -line {../../../Designs/Interconnect/BUS/Router_library2.sv:110} -trigger
+waitfor aaHierViewSrc:0
+
+action aaHierViewSrc:0 -reset
+action aaHierViewSrc:0 -inst {bus_ssc_gnrtr.agnt_[2]._bus_intrfs.fifo_out.arith_oflow_3} -line {../../../Designs/Interconnect/BUS/../FIFO_Latches/fifo.sv:396} -trigger
+waitfor aaHierViewSrc:0
+

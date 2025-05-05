@@ -1,0 +1,22 @@
+//Includes
+//`include "../../Designs/Interconnect/BUS/Router_library2.sv"
+
+// SVA binding
+bind bus_ssc_gnrtr bus_prprts chk (.*);
+
+//Testbench and Properties
+module bus_prprts #(parameter flit_size =32, parameter num_agnts = 4,parameter fifo_depth=2)(
+
+  input wire clk,
+  input wire rst,
+  input wire [num_agnts-1:0]pop,
+  input wire [num_agnts-1:0]push,
+  input wire [flit_size+$clog2(num_agnts+1)-1:0] data_in [num_agnts-1:0],
+  input wire [num_agnts-1:0]full,
+  input wire [num_agnts-1:0]pndng,
+  input wire [flit_size-1:0] data_out[num_agnts-1:0]
+   
+);
+
+
+endmodule : bus_prprts

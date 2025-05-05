@@ -1,0 +1,4 @@
+STATS:: before Simon : M=915.641mb, T=0s
+STATS:: after Simon : M=915.641mb, T=1s
+STATS:: before Load VCS Message: M=915.641mb, T=0s
+STATS:: after Load VCS Message: M=915.641mb, T=0s

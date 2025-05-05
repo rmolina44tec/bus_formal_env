@@ -1,0 +1,10 @@
+# Master Broadcast File
+time 1607446991
+pid 28817
+log /mnt/vol_NFS_Zener/WD_ESPEC/rmolina/evaristo_project/bus_vcf/vcst_rtdb/.internal/formal/fpId0/tw/run_tw_session/log.cdpl/master.zener.28817.log.gz
+tcp 172.21.33.100:45487
+wlog /dev/null
+wlog /dev/null
+wlog /dev/null
+wlog /dev/null
+status done

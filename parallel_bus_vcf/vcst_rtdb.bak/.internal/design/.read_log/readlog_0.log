@@ -1,0 +1,8 @@
+BEGIN_VIOLATION
+RULE_NAME:V2KIDGN
+FILE_NAME:prll_bus_bind.sva
+LINE_NUMBER:2
+VCS_SEVERITY:Error
+MESSAGE:&quot;bus_prprts chk(.*);&quot;VCST_RETIllegal duplicate name created during elaboration.VCST_RETMultiple declarations created for: chk.VCST_RETPlease check and make sure the name is unique.
+END_VIOLATION
+

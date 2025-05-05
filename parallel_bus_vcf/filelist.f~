@@ -1,0 +1,22 @@
+//Include directories
++incdir+../../../Designs/Interconnect/BUS/
+-y+../../../Designs/Interconnect/BUS/
++libext+.v+.sv+.svh+
+
+//Design Files
+//mnt/vol_NFS_Zener/WD_ESPEC/rmolina/Digital_Designs/Designs/Interconnect/BUS/Router_library2.sv
+../../../Designs/Interconnect/BUS/Router_library2.sv
+//Router_library2.sv
+
+//Formal testbench
+prll_bus_prprts.sva
+//prll_bus_bind.sva
+
+//Other options
+-lca
+//-full64
++define+INLINE_SVA
++UVM_VERDI_TRACE
++plusarg_save
++plusarg_ignore
+

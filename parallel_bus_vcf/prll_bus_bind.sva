@@ -1,0 +1,2 @@
+// SVA binding
+bind bus_ssc_gnrtr bus_prprts chk (.*);

@@ -1,0 +1,20 @@
+STATS:: before Simon : M=915.641mb, T=0s
+STATS:: after Simon : M=915.641mb, T=2s
+STATS:: before Load VCS Message: M=915.641mb, T=0s
+STATS:: after Load VCS Message: M=915.641mb, T=0s
+STATS:: before NLDM Creation : M=915.641mb, T=0s
+STATS:: before LoadCircuitModel : M=915.641mb, T=0s
+STATS:: after LoadCircuitModel : M=915.641mb, T=0s
+STATS:: before BuildNetlist : M=915.641mb, T=0s
+STATS:: before Build Mgr : M=915.641mb, T=0s
+STATS:: after Build Mgr : M=917.648mb, T=0s
+STATS:: before Cell properties : M=917.648mb, T=0s
+STATS:: after Cell properties : M=917.711mb, T=0s
+STATS:: after BuildNetlist : M=917.711mb, T=0s
+STATS:: after NLDM Creation : M=917.711mb, T=0s
+STATS:: before nlsim build : M=938.797mb, T=0s
+STATS:: after nlsim build : M=954.469mb, T=0s
+STATS:: before nlsim run : M=954.469mb, T=0s
+STATS:: after nlsim run : M=962.828mb, T=0s
+STATS:: before nlsim writeState : M=962.828mb, T=0s
+STATS:: after nlsim writeState : M=964.641mb, T=0s

@@ -1,0 +1,87 @@
+<ICD>
+ <SystemReset name="" value=""/>
+ <Module name="fifo_flops_ssc_0000" DesignLang="Verilog" FileName="../../../Designs/Interconnect/BUS/../FIFO_Latches/fifo.sv" LineNo="329">
+  <ModuleVariant name="fifo_flops_ssc_0000" CheckerModule="">
+   <Property name="arith_oflow_0" type="arith_oflow" FileName="../../../Designs/Interconnect/BUS/../FIFO_Latches/fifo.sv" LineNo="389">
+    <RegInitializations>
+     <RegInitialization signal="mgaep_aoflow_mgvcm_0" rhs="1'b0"/>
+    </RegInitializations>
+    <PropertyEncoding type="">
+     <EndedSignal signal="mgaep_aoflow_mgvcm_0"/>
+     <AEPEncoding>
+      <AEPNode expr="count &lt;= (count - 1);"/>
+     </AEPEncoding>
+    </PropertyEncoding>
+   </Property>
+   <Property name="arith_oflow_1" type="arith_oflow" FileName="../../../Designs/Interconnect/BUS/../FIFO_Latches/fifo.sv" LineNo="396">
+    <RegInitializations>
+     <RegInitialization signal="mgaep_aoflow_mgvcm_1" rhs="1'b0"/>
+    </RegInitializations>
+    <PropertyEncoding type="">
+     <EndedSignal signal="mgaep_aoflow_mgvcm_1"/>
+     <AEPEncoding>
+      <AEPNode expr="count &lt;= (count + 1);"/>
+     </AEPEncoding>
+    </PropertyEncoding>
+   </Property>
+   <VariantInstance name="bus_ssc_gnrtr.agnt_[0]._bus_intrfs.fifo_in" FileName="../../../Designs/Interconnect/BUS/Router_library2.sv" LineNo="136">
+    <Property name="arith_oflow_0"/>
+    <Property name="arith_oflow_1"/>
+   </VariantInstance>
+   <VariantInstance name="bus_ssc_gnrtr.agnt_[1]._bus_intrfs.fifo_in" FileName="../../../Designs/Interconnect/BUS/Router_library2.sv" LineNo="136">
+    <Property name="arith_oflow_0"/>
+    <Property name="arith_oflow_1"/>
+   </VariantInstance>
+   <VariantInstance name="bus_ssc_gnrtr.agnt_[2]._bus_intrfs.fifo_in" FileName="../../../Designs/Interconnect/BUS/Router_library2.sv" LineNo="136">
+    <Property name="arith_oflow_0"/>
+    <Property name="arith_oflow_1"/>
+   </VariantInstance>
+   <VariantInstance name="bus_ssc_gnrtr.agnt_[3]._bus_intrfs.fifo_in" FileName="../../../Designs/Interconnect/BUS/Router_library2.sv" LineNo="136">
+    <Property name="arith_oflow_0"/>
+    <Property name="arith_oflow_1"/>
+   </VariantInstance>
+  </ModuleVariant>
+ </Module>
+ <Module name="fifo_flops_ssc_0001" DesignLang="Verilog" FileName="../../../Designs/Interconnect/BUS/../FIFO_Latches/fifo.sv" LineNo="329">
+  <ModuleVariant name="fifo_flops_ssc_0001" CheckerModule="">
+   <Property name="arith_oflow_2" type="arith_oflow" FileName="../../../Designs/Interconnect/BUS/../FIFO_Latches/fifo.sv" LineNo="389">
+    <RegInitializations>
+     <RegInitialization signal="mgaep_aoflow_mgvcm_0" rhs="1'b0"/>
+    </RegInitializations>
+    <PropertyEncoding type="">
+     <EndedSignal signal="mgaep_aoflow_mgvcm_0"/>
+     <AEPEncoding>
+      <AEPNode expr="count &lt;= (count - 1);"/>
+     </AEPEncoding>
+    </PropertyEncoding>
+   </Property>
+   <Property name="arith_oflow_3" type="arith_oflow" FileName="../../../Designs/Interconnect/BUS/../FIFO_Latches/fifo.sv" LineNo="396">
+    <RegInitializations>
+     <RegInitialization signal="mgaep_aoflow_mgvcm_1" rhs="1'b0"/>
+    </RegInitializations>
+    <PropertyEncoding type="">
+     <EndedSignal signal="mgaep_aoflow_mgvcm_1"/>
+     <AEPEncoding>
+      <AEPNode expr="count &lt;= (count + 1);"/>
+     </AEPEncoding>
+    </PropertyEncoding>
+   </Property>
+   <VariantInstance name="bus_ssc_gnrtr.agnt_[0]._bus_intrfs.fifo_out" FileName="../../../Designs/Interconnect/BUS/Router_library2.sv" LineNo="137">
+    <Property name="arith_oflow_2"/>
+    <Property name="arith_oflow_3"/>
+   </VariantInstance>
+   <VariantInstance name="bus_ssc_gnrtr.agnt_[1]._bus_intrfs.fifo_out" FileName="../../../Designs/Interconnect/BUS/Router_library2.sv" LineNo="137">
+    <Property name="arith_oflow_2"/>
+    <Property name="arith_oflow_3"/>
+   </VariantInstance>
+   <VariantInstance name="bus_ssc_gnrtr.agnt_[2]._bus_intrfs.fifo_out" FileName="../../../Designs/Interconnect/BUS/Router_library2.sv" LineNo="137">
+    <Property name="arith_oflow_2"/>
+    <Property name="arith_oflow_3"/>
+   </VariantInstance>
+   <VariantInstance name="bus_ssc_gnrtr.agnt_[3]._bus_intrfs.fifo_out" FileName="../../../Designs/Interconnect/BUS/Router_library2.sv" LineNo="137">
+    <Property name="arith_oflow_2"/>
+    <Property name="arith_oflow_3"/>
+   </VariantInstance>
+  </ModuleVariant>
+ </Module>
+</ICD>

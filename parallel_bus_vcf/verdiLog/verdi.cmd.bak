@@ -1,0 +1,6 @@
+verdiWindowWorkMode -win $_Verdi_1 -formalVerification
+verdiDockWidgetDisplay -dock windowDock_vcstConsole_2
+srcSetPreference -vcstOpts \
+           {-demo -file vc_aep.tcl -prompt vcf -fmode _default -new_verdi_comm}
+verdiDockWidgetSetCurTab -dock widgetDock_VCF:GoalList
+debExit

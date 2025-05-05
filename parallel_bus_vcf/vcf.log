@@ -1,0 +1,76 @@
+restore_session -level default
+
+
+
+
+
+
+MasterSourceFile vc_aep.tcl
+set_app_var fml_mode_on true
+set_fml_appmode AEP
+set design bus_ssc_gnrtr
+read_file -top $design -format sverilog -aep all -sva -vcs {-f filelist.f}
+
+Warning-[LCA_FEATURES_ENABLED] Usage warning
+  LCA features enabled by '-lca' argument on the command line.  For more 
+  information regarding list of LCA features please refer to Chapter "LCA 
+  features" in the VCS/VCS-MX Release Notes
+
+
+Warning-[UNK_COMP_ARG] Unknown compile time plus argument used
+  Unknown compile time plus argument 'UVM_VERDI_TRACE' is ignored.
+
+ + use `+plusarg_save' to bind in runtime plusargs;
+ + use `+plusarg_ignore' to suppress this message.
+Info: Invoking New SVA Compiler Instrument...
+Info: SVAC-NC Start
+Info: SVAC-NC Finished
+Info: Invoking Vlog AEP or Cov Instrument...
+Info: Vlog Coverage/AEP Extraction Start
+Info: Vlog Coverage/AEP Extraction Finished
+Info: Invoking Simon...
+Info: Simon VCS Start
+
+Warning-[SM_BB_LIST] Blackbox module list
+  List of modules in design which are blackboxed by tool/user (1): bus_prprts
+
+=======================================================
+VCS CPU Time(s)     :0.37
+SIMON CPU Time(s)   :0.06
+SIMON Total Time(s) :0.20
+Peak Memory(MB)     :359
+=======================================================
+Info: Simon VCS Finished
+Info: Simon call complete 
+Info: Exiting after Simon Analysis 
+Verdi KDB elaboration done and the database successfully generated: 0 error(s), 0 warning(s)
+[Info] DB_COPT045: Vcs analyzer task has finished.
+[Info] PROP_I_COLLECT: Collecting Source Properties from the view:bus_ssc_gnrtr.
+[Info] PROP_I_COLLECT: Collecting Source Properties from the view:bus_ssc_gnrtr.
+create_clock clk -period 100
+create_reset reset -high
+vc_aep.tcl:6: [Error] SDC_OBJECT_NONEXIST: Object(s) not found
+	Object(s) 'reset' specified in the sdc command 'create_reset' does not exist
+sim_run -stable
+[Info] SIM_I_CREATE: Create Simulation Model.
+sim_save_reset
+check_fv -block
+[Info] FORMAL_I_CREATE: Create Formal Model:bus_ssc_gnrtr.
+[Warning] POTENTIAL_SETUP_ISSUES: There are potential setup issues. Please run check_fv_setup to confirm.
+	  Reset: 2  Clock: 9  Glitch: 18  Osc_loop: 0  Osc_seq: 21
+[Info] FORMAL_I_RUN: Starting formal verification for check_fv
+	  Id: 0  Goals: 538  Constraints: 0  Block Mode: true
+[Info] APP_LIC_CHKOUT: Checkout 1 app license(s).
+report_fv -list > aep_results.txt
+#fml_cov_gen_trace
+
+action aaMonetBanffSavePropDBToStream -summary 1 -trigger
+action aaMonetBanffSavePropDBToStream -summary 1 -trigger
+action aaMonetBanffSavePropDBToStream -summary 1 -trigger
+action aaMonetBanffSavePropDBToStream -summary 1 -trigger
+action aaMonetBanffSavePropDBToStream -summary 1 -trigger
+action aaMonetBanffSavePropDBToStream -summary 1 -trigger
+action aaMonetBanffSavePropDBToStream -summary 1 -trigger
+action aaVerdiWaitAnnotation -trigger
+action aaMonetSetReuseWave -data {}
+report_constant -xml > /mnt/vol_NFS_Zener/WD_ESPEC/rmolina/Digital_Designs/Testbenches/Formal_Env/parallel_bus_vcf/vcst_rtdb/.internal/verdi/constant.xml ; verdi_cmd verdiVcstConstantReport -xmlFile /mnt/vol_NFS_Zener/WD_ESPEC/rmolina/Digital_Designs/Testbenches/Formal_Env/parallel_bus_vcf/vcst_rtdb/.internal/verdi/constant.xml

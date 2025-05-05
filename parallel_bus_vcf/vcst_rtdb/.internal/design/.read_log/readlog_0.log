@@ -1,0 +1,10 @@
+BEGIN_VIOLATION
+RULE_NAME:SM_BB_LIST
+VCS_SEVERITY:Warning
+MESSAGE:  List of modules in design which are blackboxed by tool/user (1): bus_prprts
+END_VIOLATION
+
+
+
+
+

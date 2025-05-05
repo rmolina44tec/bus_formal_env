@@ -1,0 +1,7 @@
+@elabcom rc file Version 1.0
+[oh]
+invokeDir = /mnt/vol_NFS_Zener/WD_ESPEC/rmolina/Digital_Designs/Testbenches/Formal_Env/parallel_bus_vcf
+hostCommand = -lib /mnt/vol_NFS_Zener/WD_ESPEC/rmolina/Digital_Designs/Testbenches/Formal_Env/parallel_bus_vcf/vcst_rtdb/.internal/design/simv.daidir/work -saveLevel -elab /mnt/vol_NFS_Zener/WD_ESPEC/rmolina/Digital_Designs/Testbenches/Formal_Env/parallel_bus_vcf/vcst_r\
+tdb/.internal/design/simv.daidir/kdb -simflow -simdir /mnt/vol_NFS_Zener/WD_ESPEC/rmolina/Digital_Designs/Testbenches/Formal_Env/parallel_bus_vcf/vcst_rtdb/.internal/design/simv.daidir/kdb_libs -top bus_ssc_gnrtr -saveLevel -silent +disable_message+C00373 \
+-Lf work +disable_message+C00371 +disable_message+C00380+C00381 +disable_message+C00388+C00389 -SNPS_ELABCOM -saveElab
+simType = VCS

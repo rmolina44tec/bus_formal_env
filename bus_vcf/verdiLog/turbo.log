@@ -1,0 +1,5 @@
+Command Line: /mnt/vol_NFS_Zener/WD_ESPEC/rmolina/evaristo_project/vc_static/O-2018.09-SP2/verdi/platform/LINUXAMD64/bin/Novas -vcst -vcstOpts {-demo -file vc_cov.tcl -prompt vcf -mode64 -fmode _default -new_verdi_comm}
+uname(Linux zener 2.6.32-754.33.1.el6.x86_64 #1 SMP Tue Aug 25 15:29:40 UTC 2020 x86_64)
+[MessageBox] The KDB has been updated by other processes. Reload the KDB to update it; otherwise, you may get unexpected results.
+(ERR_TIMEOUT_WRITING_PACKET)
+au time 414.161161 12.243139 6.466017 delta 334065664 334065664 total 763523072 763523072

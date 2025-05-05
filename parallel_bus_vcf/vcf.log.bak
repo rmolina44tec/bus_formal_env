@@ -1,0 +1,55 @@
+restore_session -level default
+
+
+
+
+
+
+MasterSourceFile vc_aep.tcl
+set_app_var fml_mode_on true
+set_fml_appmode AEP
+set design bus_ssc_gnrtr
+read_file -top $design -format sverilog -aep all -sva -vcs {-f filelist.f}
+
+Warning-[LCA_FEATURES_ENABLED] Usage warning
+  LCA features enabled by '-lca' argument on the command line.  For more 
+  information regarding list of LCA features please refer to Chapter "LCA 
+  features" in the VCS/VCS-MX Release Notes
+
+
+Warning-[UNK_COMP_ARG] Unknown compile time plus argument used
+  Unknown compile time plus argument 'UVM_VERDI_TRACE' is ignored.
+
+ + use `+plusarg_save' to bind in runtime plusargs;
+ + use `+plusarg_ignore' to suppress this message.
+
+Error-[V2KIDGN] Illegal duplicate name created
+prll_bus_bind.sva, 2
+"bus_prprts chk(.*);"
+  Illegal duplicate name created during elaboration.
+  Multiple declarations created for: chk.
+  Please check and make sure the name is unique.
+
+2 warnings
+1 error
+[Info] DB_COPT045: Vcs analyzer task has finished.
+[Error] DB_COPT012: VCS reader failed
+	No scm file is generated, thus no NLDM is created.
+[Error] COM_ENV005: Design read using VCS & Simon failed.
+Error: 0
+	Use error_info for more info. (CMD-013)
+Information: script 'vc_aep.tcl'
+	stopped at line 4 due to error. (CMD-081)
+Extended error info:
+0
+    while executing
+"read_file -top $design -format sverilog -aep all -sva -vcs {-f filelist.f}"
+ -- End Extended Error Info
+
+action aaMonetBanffSavePropDBToStream -summary 1 -trigger
+action aaMonetBanffSavePropDBToStream -summary 1 -trigger
+action aaMonetBanffSavePropDBToStream -summary 1 -trigger
+action aaMonetBanffSavePropDBToStream -summary 1 -trigger
+action aaMonetBanffSavePropDBToStream -summary 1 -trigger
+action aaMonetBanffSavePropDBToStream -summary 1 -trigger
+action aaMonetBanffSavePropDBToStream -summary 1 -trigger

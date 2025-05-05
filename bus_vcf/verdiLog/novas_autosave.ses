@@ -1,0 +1,59 @@
+@verdi rc file Version 1.0
+[General]
+saveDB = TRUE
+relativePath = FALSE
+saveSingleView = FALSE
+saveNWaveWinId = 
+VerdiVersion = Verdi_O-2018.09-SP2
+[KeyNote]
+Line1 = Automatic Backup 0
+Line2 = Save Open Database Information: Yes
+Line3 = Path Option: Absolute Paths
+Line4 = Windows Option: All Windows
+[TestBench]
+ConstrViewShow = 0
+InherViewShow = 0
+FSDBMsgShow = 0
+AnnotationShow = 0
+Console = FALSE
+powerDumped = 0
+[Verdi_1]
+workMode = FormalVerification
+[Xprop_Option]
+Xprop_Value = tmerge
+[hb]
+BlackBoxFile = novas_autosave.ses.BlackBox
+viewport = 0 25 1276 640 0 0 108 1274
+activeNode = "tec_riscv_bus"
+activeFile = "/mnt/vol_NFS_Zener/WD_ESPEC/rmolina/riscv_test_regression/Verificacion_RISCV_TEC/TEC_RISCV/BUS_Micro/Bus_Micro.sv"
+interactiveMode = False
+viewType = Source
+simulatorMode = False
+sourceBeginLine = 0
+baMode = False
+srcLineNum = True
+AutoWrap = True
+IdentifyFalseLogic = False
+syncSignal = False
+traceMode = Hierarchical
+showTraceInSchema = True
+paMode = False
+funcMode = False
+powerAwareAnnot = False
+amsAnnot = True
+traceCrossHier = True
+DnDtraceCrossHierOnly = True
+traceIncTopPort = False
+leadingZero = False
+signalPane = False
+userAnnot = False
+userAnnotField = 0
+rangeSelection = 1 1 1 14 1 1
+sdfCheckUndef = FALSE
+simFlow = FALSE
+[hb.design]
+importCmd = "-simflow" "-dbdir" "/mnt/vol_NFS_Zener/WD_ESPEC/rmolina/evaristo_project/bus_vcf/vcst_rtdb/.internal/design/simv.daidir" 
+invokeDir = /mnt/vol_NFS_Zener/WD_ESPEC/rmolina/evaristo_project/bus_vcf
+[hb.sourceTab.1]
+File = /mnt/vol_NFS_Zener/WD_ESPEC/rmolina/riscv_test_regression/Verificacion_RISCV_TEC/TEC_RISCV/BUS_Micro/Bus_Micro.sv
+Line = 1

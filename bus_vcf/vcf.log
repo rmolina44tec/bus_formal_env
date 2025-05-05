@@ -1,0 +1,70 @@
+restore_session -level default
+
+
+
+
+
+
+MasterSourceFile vc_cov.tcl
+set_app_var fml_mode_on true
+set_fml_appmode COV
+set design tec_riscv_bus
+read_file -top $design -format sverilog -cov line+cond -sva -vcs {-cm_cond allops -f filelist}
+[Info] COV_I_NO_DB_AUTO_OPT_OFF: No coverage database is imported.
+	Hence coverage options cannot be automatically extracted by the tool. So please make sure to specify the relevant coverage options with the read_file/elaborate command.
+
+Warning-[LCA_FEATURES_ENABLED] Usage warning
+  LCA features enabled by '-lca' argument on the command line.  For more 
+  information regarding list of LCA features please refer to Chapter "LCA 
+  features" in the VCS/VCS-MX Release Notes
+
+
+Warning-[UNK_COMP_ARG] Unknown compile time plus argument used
+  Unknown compile time plus argument 'UVM_VERDI_TRACE' is ignored.
+
+ + use `+plusarg_save' to bind in runtime plusargs;
+ + use `+plusarg_ignore' to suppress this message.
+Info: Invoking New SVA Compiler Instrument...
+Info: SVAC-NC Start
+Info: SVAC-NC Finished
+VCS Coverage Metrics Release O-2018.09-SP2_Full64 Copyright (c) 1991-2018 by Synopsys Inc.
+Info: Invoking Pre Vlog Line Cov Instrument...
+Info: Invoking Pre Vlog Cond Cov Instrument...
+Info: Invoking Vlog AEP or Cov Instrument...
+Info: Vlog Coverage/AEP Extraction Start
+Info: Vlog Coverage/AEP Extraction Finished
+Info: Invoking Simon...
+Info: Simon VCS Start
+
+Warning-[SM_BB_LIST] Blackbox module list
+  List of modules in design which are blackboxed by tool/user (1): sva_bus
+
+=======================================================
+VCS CPU Time(s)     :0.52
+SIMON CPU Time(s)   :0.11
+SIMON Total Time(s) :0.47
+Peak Memory(MB)     :367
+=======================================================
+Info: Simon VCS Finished
+Info: Simon call complete 
+Info: Exiting after Simon Analysis 
+Verdi KDB elaboration done and the database successfully generated: 0 error(s), 0 warning(s)
+[Info] DB_COPT045: Vcs analyzer task has finished.
+[Info] PROP_I_COLLECT: Collecting Source Properties from the view:tec_riscv_bus.
+[Info] PROP_I_COLLECT: Collecting Source Properties from the view:tec_riscv_bus.
+create_clock clk -period 100
+#create_reset reset -high
+sim_run -stable
+[Info] SIM_I_CREATE: Create Simulation Model.
+sim_save_reset
+#fml_cov_gen_trace
+
+action aaMonetBanffSavePropDBToStream -summary 1 -trigger
+action aaMonetBanffSavePropDBToStream -summary 1 -trigger
+action aaMonetBanffSavePropDBToStream -summary 1 -trigger
+action aaMonetBanffSavePropDBToStream -summary 1 -trigger
+action aaMonetBanffSavePropDBToStream -summary 1 -trigger
+action aaMonetBanffSavePropDBToStream -summary 1 -trigger
+action aaMonetBanffSavePropDBToStream -summary 1 -trigger
+action aaVerdiWaitAnnotation -trigger
+action aaMonetSetReuseWave -data {}

@@ -1,0 +1,19 @@
+gui_vcst_set_parameters -source start
+verdiShowWindow 
+gui_close_db -all 
+gui_vcst_set_parameters -rtdb /mnt/vol_NFS_Zener/WD_ESPEC/rmolina/evaristo_project/bus_vcf/vcst_rtdb
+verdiDockWidgetHide -dock widgetDock_<HvpDetail> 
+verdiDockWidgetHide -dock widgetDock_<Hvp> 
+verdiDockWidgetHide -dock widgetDock_<DataBaseDiff> 
+verdiDockWidgetHide -dock widgetDock_<PlanDiff> 
+verdiDockWidgetHide -dock widgetDock_<Test> 
+verdiDockWidgetSetCurTab -dock widgetDock_Message 
+gui_vcst_set_parameters -mode UA 
+gui_vcst_set_parameters -task COV -status 100 -loading 
+gui_vcst_set_parameters -is_running false 
+gui_vcst_set_parameters -covScope default
+gui_vcst_set_parameters -extra_info 1
+gui_open_cov -hier /mnt/vol_NFS_Zener/WD_ESPEC/rmolina/evaristo_project/bus_vcf/vcst_rtdb/cov_debug/COV_UA_Auto_120820_11:03.vdb -fsm state+transition -merge MergedTest -test {/mnt/vol_NFS_Zener/WD_ESPEC/rmolina/evaristo_project/bus_vcf/vcst_rtdb/cov_debug/COV_UA_Auto_120820_11:03/test /mnt/vol_NFS_Zener/WD_ESPEC/rmolina/evaristo_project/bus_vcf/vcst_rtdb/cov_debug/COV_UA_Auto_120820_11:03/test_vc_cov_0 } -metric { line cond }
+gui_list_select -id CoverageTable.1 -list covtblInstancesList { tec_riscv_bus } 
+gui_list_action -id  CoverageTable.1 -list {covtblInstancesList} tec_riscv_bus 
+gui_vcst_set_parameters -source end
